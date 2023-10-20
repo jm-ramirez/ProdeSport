@@ -10,5 +10,5 @@ const styles = StyleSheet.create({
 });
 
 export default function Logo() {
-  return <Image source={require('../assets/logo.png')} style={styles.image} />
+  return <Image source={require('../assets/logo2.png')} style={styles.image} />
 };

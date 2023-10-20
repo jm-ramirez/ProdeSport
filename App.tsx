@@ -17,23 +17,27 @@ import {
 const Stack = createStackNavigator()
 
 function App() {
-  <Provider theme={theme}>
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="StartScreen"
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name="StartScreen" component={StartScreen} />
-        <Stack.Screen name="LoginScreen" component={LoginScreen} />
-        <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
-        <Stack.Screen name="ForecastsScreen" component={ForecastsScreen} />
-        <Stack.Screen name="MyTournamentsScreen" component={MyTournamentsScreen} />
-        <Stack.Screen name="FixtureScreen" component={FixtureScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  </Provider>
+  return ( // Agrega la palabra clave 'return' aquí
+    <Provider theme={theme}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="StartScreen"
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name="StartScreen" component={StartScreen} />
+          <Stack.Screen name="LoginScreen" component={LoginScreen} />
+          <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+          <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
+          <Stack.Screen name="ForecastsScreen" component={ForecastsScreen} />
+          <Stack.Screen name="MyTournamentsScreen" component={MyTournamentsScreen} />
+          <Stack.Screen name="FixtureScreen" component={FixtureScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
+  );
 }
+
+export default App; // Asegúrate de exportar la función 'App'
